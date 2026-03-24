@@ -25,6 +25,28 @@ export const VOLUNTEERING = {
 
     Time: `${v}Time`,
     timeSession: `${v}timeSession`,
+
+    Role: `${v}Role`,
+    roleActivity: `${v}roleActivity`,
+    roleTitle: `${v}roleTitle`,
+    roleDescription: `${v}roleDescription`,
+    roleAllowsRemoteParticipation: `${v}roleAllowsRemoteParticipation`,
+    roleApplyLink: `${v}roleApplyLink`,
+    roleMinimumAge: `${v}roleMinimumAge`,
+    roleMaximumAge: `${v}roleMaximumAge`,
+    roleCommitment: `${v}roleCommitment`,
+    roleAccessibility: `${v}roleAccessibility`,
+    roleRequirement: `${v}roleRequirement`,
+    roleReward: `${v}roleReward`,
+    roleSkill: `${v}roleSkill`,
+
+    Location: `${v}Location`,
+    locationSession: `${v}locationSession`,
+    locationName: `${v}locationName`,
+    locationAddress: `${v}locationAddress`,
+    locationLatitude: `${v}locationLatitude`,
+    locationLongitude: `${v}locationLongitude`,
+    locationGeometry: `${v}locationGeometry`,
 } as const
 
 const t = "http://www.w3.org/2006/time#"
@@ -41,4 +63,11 @@ export const TIME = {
 const r = "http://www.w3.org/2000/01/rdf-schema#"
 export const RDFS = {
     label: `${r}label `,
+} as const
+
+const s = "http://www.w3.org/2004/02/skos/core#"
+export const SKOS = {
+    Concept: `${s}Concept `,
+    prefLabel: `${s}prefLabel `,
+    definition: `${s}definition `,
 } as const
