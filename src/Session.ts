@@ -17,7 +17,7 @@ export class Session extends TermWrapper {
         return this.objects(VOLUNTEERING.sessionLocation, TermAs.instance(Location), TermFrom.instance)
     }
 
-    get time(): Set<Location> {
+    get time(): Set<Time> {
         return this.objects(VOLUNTEERING.sessionTime, TermAs.instance(Time), TermFrom.instance)
     }
 }
