@@ -1,0 +1,50 @@
+{
+  "name": "volunteering-data-wrapper",
+  "version": "0.1.0",
+  "description": "Volunteering Data RDF/JS object mapping library",
+  "main": "dist/mod.js",
+  "type": "module",
+  "types": "./dist/mod.d.ts",
+  "exports": {
+    ".": "./dist/mod.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdfjs/wrapper.git"
+  },
+  "scripts": {
+    "start": "npm test",
+    "build:test": "tsc && tsc -p test",
+    "test": "npm run build:test && node --experimental-test-coverage --test \"**/*.test.js\""
+  },
+  "keywords": [
+    "volunteering",
+    "volunteerindata",
+    "rdf",
+    "object-oriented",
+    "rdfjs",
+    "mapping",
+    "wrapper"
+  ],
+  "contributors": [
+    "Matthieu Bosquet (https://github.com/matthieubosquet)",
+    "Samu Lang (https://github.com/langsamu)"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@rdfjs/wrapper": "^0.32"
+  },
+  "devDependencies": {
+    "@rdfjs/types": "^2",
+    "@types/node": "^25",
+    "typescript": "^6",
+    "@types/n3": "^1",
+    "n3": "^2"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
