@@ -17,4 +17,9 @@ export const VOLUNTEERING = {
     activityOrganisation: `${v}activityOrganisation`,
     activityRole: `${v}activityRole`,
     activitySession: `${v}activitySession`,
+
+    Session: `${v}Session`,
+    sessionActivity: `${v}sessionActivity`,
+    sessionLocation: `${v}sessionLocation`,
+    sessionTime: `${v}sessionTime`,
 } as const

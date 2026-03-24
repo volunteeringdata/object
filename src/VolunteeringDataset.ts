@@ -3,6 +3,7 @@ import { Organisation } from "./Organisation.js"
 import { Activity } from "./Activity.js"
 import { Concept } from "./Concept.js"
 import { SKOS, VOLUNTEERING } from "./Vocabulary.js"
+import { Session } from "./Session.js"
 
 export class VolunteeringDataset extends DatasetWrapper {
     get organisations(): Iterable<Organisation> {
@@ -11,6 +12,10 @@ export class VolunteeringDataset extends DatasetWrapper {
 
     get activities(): Iterable<Activity> {
         return this.instancesOf(VOLUNTEERING.Activity, Activity)
+    }
+
+    get sessions(): Iterable<Session> {
+        return this.instancesOf(VOLUNTEERING.Session, Session)
     }
 
     get concepts(): Iterable<Concept> {
