@@ -4,6 +4,7 @@ import { Activity } from "./Activity.js"
 import { Concept } from "./Concept.js"
 import { SKOS, VOLUNTEERING } from "./Vocabulary.js"
 import { Session } from "./Session.js"
+import { Time } from "./Time.js"
 
 export class VolunteeringDataset extends DatasetWrapper {
     get organisations(): Iterable<Organisation> {
@@ -16,6 +17,10 @@ export class VolunteeringDataset extends DatasetWrapper {
 
     get sessions(): Iterable<Session> {
         return this.instancesOf(VOLUNTEERING.Session, Session)
+    }
+
+    get times(): Iterable<Time> {
+        return this.instancesOf(VOLUNTEERING.Time, Time)
     }
 
     get concepts(): Iterable<Concept> {

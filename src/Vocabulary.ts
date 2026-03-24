@@ -22,4 +22,23 @@ export const VOLUNTEERING = {
     sessionActivity: `${v}sessionActivity`,
     sessionLocation: `${v}sessionLocation`,
     sessionTime: `${v}sessionTime`,
+
+    Time: `${v}Time`,
+    timeSession: `${v}timeSession`,
+} as const
+
+const t = "http://www.w3.org/2006/time#"
+export const TIME = {
+    hasBeginning: `${t}hasBeginning `,
+    hasEnd: `${t}hasEnd `,
+    dayOfWeek: `${t}dayOfWeek `,
+    hour: `${t}hour `,
+    minute: `${t}minute `,
+    second: `${t}second `,
+    inDateTime: `${t}inDateTime `,
+} as const
+
+const r = "http://www.w3.org/2000/01/rdf-schema#"
+export const RDFS = {
+    label: `${r}label `,
 } as const
