@@ -8,4 +8,13 @@ export const VOLUNTEERING = {
     organisationImage: `${v}organisationImage`,
     organisationActivity: `${v}organisationActivity`,
     organisationCause: `${v}organisationCause`,
+
+    Activity: `${v}Activity`,
+    organisationTitle: `${v}organisationTitle`,
+    activityDescription: `${v}activityDescription`,
+    activityRequiresEmergencyParticipation: `${v}activityRequiresEmergencyParticipation`,
+    activityImage: `${v}activityImage`,
+    activityOrganisation: `${v}activityOrganisation`,
+    activityRole: `${v}activityRole`,
+    activitySession: `${v}activitySession`,
 } as const
