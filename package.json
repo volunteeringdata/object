@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdfjs/wrapper.git"
+    "url": "git+https://github.com/volunteeringdata/object.git"
   },
   "scripts": {
     "start": "npm test",
