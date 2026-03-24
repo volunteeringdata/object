@@ -68,6 +68,7 @@ export const RDFS = {
 const s = "http://www.w3.org/2004/02/skos/core#"
 export const SKOS = {
     Concept: `${s}Concept `,
+    altLabel: `${s}altLabel `,
     prefLabel: `${s}prefLabel `,
     definition: `${s}definition `,
 } as const
