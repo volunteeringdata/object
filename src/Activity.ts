@@ -21,12 +21,12 @@ export class Activity extends TermWrapper {
         this.overwrite(VOLUNTEERING.activityDescription, value, LiteralFrom.string)
     }
 
-    get requiresEmergencyParticipation(): string {
-        return this.singular(VOLUNTEERING.activityRequiresEmergencyParticipation, LiteralAs.string)
+    get requiresEmergencyParticipation(): boolean {
+        return this.singular(VOLUNTEERING.activityRequiresEmergencyParticipation, LiteralAs.boolean)
     }
 
-    set requiresEmergencyParticipation(value: string) {
-        this.overwrite(VOLUNTEERING.activityRequiresEmergencyParticipation, value, LiteralFrom.string)
+    set requiresEmergencyParticipation(value: boolean) {
+        this.overwrite(VOLUNTEERING.activityRequiresEmergencyParticipation, value, LiteralFrom.boolean)
     }
 
     get image(): URL {
