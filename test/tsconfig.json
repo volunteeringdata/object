@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "rootDir": ".",
+    "paths": {
+      "@volunteeringdata/object": ["../dist/mod.d.ts"]
+    }
+  },
+  "include": ["./unit"]
+}

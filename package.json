@@ -1,5 +1,5 @@
 {
-  "name": "volunteering-data-wrapper",
+  "name": "@volunteeringdata/object",
   "version": "0.1.0",
   "description": "Volunteering Data RDF/JS object mapping library",
   "main": "dist/mod.js",
