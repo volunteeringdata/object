@@ -1,36 +1,36 @@
-import { TermWrapper, LiteralAs, LiteralFrom } from "@rdfjs/wrapper"
+import { LiteralAs, LiteralFrom, RequiredAs, RequiredFrom, TermWrapper } from "@rdfjs/wrapper"
 import { VOLUNTEERING } from "./Vocabulary.js"
 
 export class Location extends TermWrapper {
     get name(): string {
-        return this.singular(VOLUNTEERING.locationName, LiteralAs.string)
+        return RequiredFrom.subjectPredicate(this, VOLUNTEERING.locationName, LiteralAs.string)
     }
 
     set name(value: string) {
-        this.overwrite(VOLUNTEERING.locationName, value, LiteralFrom.string)
+        RequiredAs.object(this, VOLUNTEERING.locationName, value, LiteralFrom.string)
     }
 
     get address(): string {
-        return this.singular(VOLUNTEERING.locationAddress, LiteralAs.string)
+        return RequiredFrom.subjectPredicate(this, VOLUNTEERING.locationAddress, LiteralAs.string)
     }
 
     set address(value: string) {
-        this.overwrite(VOLUNTEERING.locationAddress, value, LiteralFrom.string)
+        RequiredAs.object(this, VOLUNTEERING.locationAddress, value, LiteralFrom.string)
     }
 
     get latitude(): number {
-        return this.singular(VOLUNTEERING.locationLatitude, LiteralAs.number)
+        return RequiredFrom.subjectPredicate(this, VOLUNTEERING.locationLatitude, LiteralAs.number)
     }
 
     set latitude(value: number) {
-        this.overwrite(VOLUNTEERING.locationLatitude, value, LiteralFrom.double)
+        RequiredAs.object(this, VOLUNTEERING.locationLatitude, value, LiteralFrom.double)
     }
 
     get longitude(): number {
-        return this.singular(VOLUNTEERING.locationLongitude, LiteralAs.number)
+        return RequiredFrom.subjectPredicate(this, VOLUNTEERING.locationLongitude, LiteralAs.number)
     }
 
     set longitude(value: number) {
-        this.overwrite(VOLUNTEERING.locationLongitude, value, LiteralFrom.double)
+        RequiredAs.object(this, VOLUNTEERING.locationLongitude, value, LiteralFrom.double)
     }
 }
