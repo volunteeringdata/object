@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@rdfjs/wrapper": "^0.32"
+    "@rdfjs/wrapper": "^0.33"
   },
   "devDependencies": {
     "@rdfjs/types": "^2",
