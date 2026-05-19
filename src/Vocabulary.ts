@@ -51,24 +51,24 @@ export const VOLUNTEERING = {
 
 const t = "http://www.w3.org/2006/time#"
 export const TIME = {
-    hasBeginning: `${t}hasBeginning `,
-    hasEnd: `${t}hasEnd `,
-    dayOfWeek: `${t}dayOfWeek `,
-    hour: `${t}hour `,
-    minute: `${t}minute `,
-    second: `${t}second `,
-    inDateTime: `${t}inDateTime `,
+    hasBeginning: `${t}hasBeginning`,
+    hasEnd: `${t}hasEnd`,
+    dayOfWeek: `${t}dayOfWeek`,
+    hour: `${t}hour`,
+    minute: `${t}minute`,
+    second: `${t}second`,
+    inDateTime: `${t}inDateTime`,
 } as const
 
 const r = "http://www.w3.org/2000/01/rdf-schema#"
 export const RDFS = {
-    label: `${r}label `,
+    label: `${r}label`,
 } as const
 
 const s = "http://www.w3.org/2004/02/skos/core#"
 export const SKOS = {
-    Concept: `${s}Concept `,
-    altLabel: `${s}altLabel `,
-    prefLabel: `${s}prefLabel `,
-    definition: `${s}definition `,
+    Concept: `${s}Concept`,
+    altLabel: `${s}altLabel`,
+    prefLabel: `${s}prefLabel`,
+    definition: `${s}definition`,
 } as const
